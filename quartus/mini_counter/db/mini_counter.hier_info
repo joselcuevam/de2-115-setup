@@ -1,0 +1,37 @@
+|mini_counter
+clk => ~NO_FANOUT~
+rst => ~NO_FANOUT~
+cnt[0] <= <GND>
+cnt[1] <= <GND>
+cnt[2] <= <GND>
+cnt[3] <= <GND>
+cnt[4] <= <GND>
+cnt[5] <= <GND>
+cnt[6] <= <GND>
+cnt[7] <= <GND>
+cnt[8] <= <GND>
+cnt[9] <= <GND>
+cnt[10] <= <GND>
+cnt[11] <= <GND>
+cnt[12] <= <GND>
+cnt[13] <= <GND>
+cnt[14] <= <GND>
+cnt[15] <= <GND>
+cnt[16] <= <GND>
+cnt[17] <= <GND>
+cnt[18] <= <GND>
+cnt[19] <= <GND>
+cnt[20] <= <GND>
+cnt[21] <= <GND>
+cnt[22] <= <GND>
+cnt[23] <= <GND>
+cnt[24] <= <GND>
+cnt[25] <= <GND>
+cnt[26] <= <GND>
+cnt[27] <= <GND>
+cnt[28] <= <GND>
+cnt[29] <= <GND>
+cnt[30] <= <GND>
+cnt[31] <= <GND>
+
+
