@@ -41,7 +41,7 @@ set_global_assignment -name DEVICE EP4CE115F29C7
 set_global_assignment -name TOP_LEVEL_ENTITY mini_counter
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 12.1
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "21:00:29  NOVEMBER 16, 2018"
-set_global_assignment -name LAST_QUARTUS_VERSION 16.0.0
+set_global_assignment -name LAST_QUARTUS_VERSION 10.0
 set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
 set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
 set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
@@ -51,15 +51,21 @@ set_global_assignment -name VERILOG_FILE mini_counter.v
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_location_assignment PIN_AB28 -to rst
+set_location_assignment PIN_Y2 -to clk
+set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"
+set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Root Region"
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "2.5 V"
+set_global_assignment -name MISC_FILE "C:/Users/jose/git_folder/de2-115-setup/quartus/mini_counter/mini_counter.dpf"
+set_location_assignment PIN_R24 -to en_b
+set_location_assignment PIN_H15 -to test_out
+set_location_assignment PIN_G16 -to test_out_1
 set_location_assignment PIN_G19 -to cnt[0]
 set_location_assignment PIN_F19 -to cnt[1]
 set_location_assignment PIN_E19 -to cnt[2]
 set_location_assignment PIN_F21 -to cnt[3]
-set_location_assignment PIN_M23 -to rst
-set_location_assignment PIN_Y2 -to clk
-set_instance_assignment -name IO_STANDARD "2.5 V" -to cnt[0]
-set_instance_assignment -name IO_STANDARD "2.5 V" -to cnt[1]
-set_instance_assignment -name IO_STANDARD "2.5 V" -to cnt[2]
-set_instance_assignment -name IO_STANDARD "2.5 V" -to cnt[3]
-set_instance_assignment -name IO_STANDARD "3.0-V LVTTL" -to clk
+set_location_assignment PIN_F18 -to cnt[4]
+set_location_assignment PIN_E18 -to cnt[5]
+set_location_assignment PIN_J19 -to cnt[6]
+set_location_assignment PIN_H19 -to cnt[7]
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
